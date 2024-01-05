@@ -1,0 +1,21 @@
+/* Root */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Heading  */
+h2 {
+  padding: 5px 0 5px 8px;
+}
+
+/* Paragraph */
+p {
+  padding: 5px 0 5px 8px;
+}
+
+/* profile */
+
+.profile-img {
+}
