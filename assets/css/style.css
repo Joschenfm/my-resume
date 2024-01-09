@@ -19,6 +19,26 @@ html {
   margin: 10px;
   border-radius: 5px;
 }
+
+.column-section {
+  width: 150px;
+  float: left;
+  background-color: #d2e0fb;
+  border: 5px solid #8eaccd;
+  margin: 10px;
+  border-radius: 5px;
+}
+.column-section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Inline Section */
+
+.two-section {
+  display: inline-block;
+}
+
 /* Section profile and name */
 
 #profile-name-img h2 {
@@ -27,6 +47,7 @@ html {
 
 /* Section text */
 .profile-section h2,
+.column-section h2,
 p {
   padding: 5px 0 0 10px;
 }
