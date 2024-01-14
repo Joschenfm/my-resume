@@ -11,20 +11,31 @@
   .heading {
     padding: 5px 0 5px 0;
   }
+  hr {
+    border-color: white;
+  }
+
+  .button {
+    background-color: #93c6e7;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+  }
 }
 
 /* END: ROOT */
 
 /* HEADER - BEGIN */
 .header-section {
-  height: 150px;
+  /* height: 150px; */
   background-color: #aee2ff;
 }
 .nav > ul {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   gap: 30px;
-  padding-top: 15px;
+  padding: 20px;
 }
 .nav > ul > li {
   flex-basis: 100px;
@@ -53,30 +64,58 @@
   background-color: #b9f3fc;
 }
 .profile-img {
-  width: 30%;
+  /* width: 30%; */
+  /* margin: 15px; */
   padding: 10px;
   text-align: center;
 }
 .profile-des {
-  width: 70%;
+  /* width: 70%; */
   padding: 10px;
   text-align: justify;
 }
+/* SERVICE - BEGIN */
+
+.service-section {
+  background-color: #b9f3fc;
+  padding: 30px;
+}
+.service-section > ul {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+.service-section ul li {
+  background-color: #f2f2f2;
+  margin: 10px;
+  padding: 15px;
+  border: 1px solid white;
+  border-radius: 10px;
+  text-align: center;
+  list-style: none;
+  flex-basis: 300px;
+}
+.service-section ul li:hover {
+  background-color: white;
+}
+
+/* SERVICE - END */
 
 /* REPONSIVE */
 
-@media (max-width: 300px) {
-  .nav > ul,
-  .nav ul li,
-  .profile-section {
-    display: block;
-  }
-  .profile-section {
-    margin-top: 20px;
+@media (max-width: 400px) {
+  .nav > ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
   }
 
-  .profile-img,
-  .profile-des {
-    width: 100%;
+  .profile-section,
+  .service-section ul {
+    display: block;
+  }
+
+  li p {
+    text-align: justify;
   }
 }
