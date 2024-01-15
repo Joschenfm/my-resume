@@ -6,6 +6,11 @@
   font-family: "Abel", sans-serif;
 }
 
+a,
+li > a {
+  text-decoration: none;
+}
+
 hr {
   border-color: white;
   border: 1px solid white;
@@ -21,7 +26,7 @@ hr {
   padding: 5px;
   border: none;
   border-radius: 5px;
-  margin: 5px;
+  margin-top: 15px;
 }
 /* END: ROOT */
 
@@ -41,7 +46,7 @@ hr {
   padding: 8px 0;
   background-color: #93c6e7;
   border: 1px solid white;
-  font-weight: 500;
+  font-weight: 600;
   text-transform: uppercase;
   text-align: center;
   border-radius: 5px;
@@ -83,12 +88,11 @@ hr {
 }
 
 .sup-div {
-  /* margin: 15px; */
+  margin: 10px;
   padding: 15px;
   border: 1px solid white;
   border-radius: 5px;
 }
-
 /* SUP - END */
 
 /* SERVICE - BEGIN */
@@ -112,11 +116,28 @@ hr {
   list-style: none;
   flex-basis: 300px;
 }
+
 .service-section ul li:hover {
   background-color: white;
 }
 
 /* SERVICE - END */
+
+/* GRID - BEGIN */
+.grid-section {
+  display: grid;
+  padding: 30px;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  background-color: #7bd3ea;
+}
+.grid-items {
+  background-color: #b9f3fc;
+  margin: 10px;
+  padding: 15px;
+  border-radius: 10px;
+}
+/* GRID - END */
 
 /* REPONSIVE */
 
@@ -128,7 +149,8 @@ hr {
   }
 
   .profile-section,
-  .service-section ul {
+  .service-section ul,
+  .grid-section {
     display: block;
   }
 
