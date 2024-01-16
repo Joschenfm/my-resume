@@ -137,6 +137,13 @@ hr {
   grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr;
 }
 
+.grid-item-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 .grid-items {
   background-color: #b9f3fc;
   margin: 10px;
